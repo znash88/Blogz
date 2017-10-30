@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BLOG LIST</title>
+</head>
+
+<body>
+
+    <h3>Blog List</h3>
+    <ul>
+
+
+        {% for blog in blogs %}
+        <li><a href="/blog?id={{blog.id}}">{{blog.title}}</a></li>
+        {% endfor %}
+
+    </ul>
+
+    <button><a href="/new_post">New Post</a></button>
+    
+    
+</body>
+
+</html>

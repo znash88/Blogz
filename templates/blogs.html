@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>New Blog Post</title>
+</head>
+
+<body>
+
+    <form action="/new_post" method="POST">
+        <label>Blog Title</label>
+        <input type="text" name="title" />
+        <label>Blog Content</label>
+        <textarea name="body"></textarea>
+        <button type="submit">submit</button>
+
+        <span>{{error}}</span>
+      
+    </form>
+</body>
+
+</html>
